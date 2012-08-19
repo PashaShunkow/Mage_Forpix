@@ -1,0 +1,8 @@
+db >
+log - forpix
+pass - 1111
+backend >
+log - forpix
+pass - forpix123
+encript.code > 
+b6694bbd8fd6cf8365543f1a89c93a67

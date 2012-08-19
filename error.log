@@ -1,0 +1,74 @@
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 16431 to 5472 : URL /index.php/install/
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 2388 to 1081 : URL /skin/install/default/default/css/reset.css, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 11699 to 3368 : URL /skin/install/default/default/css/boxes.css, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 1945 to 826 : URL /skin/install/default/default/css/clears.css, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 39080 to 8659 : URL /js/prototype/validation.js, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 38745 to 8764 : URL /js/scriptaculous/effects.js, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 1597 to 720 : URL /js/mage/translate.js, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 22592 to 6285 : URL /js/varien/js.js, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 163313 to 37387 : URL /js/prototype/prototype.js, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:15 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 14189 to 3177 : URL /js/varien/form.js, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:21 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php/install/wizard/beginPost/, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:39:22 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 27436 to 7762 : URL /index.php/install/wizard/locale/, referer: http://forpix.loc/index.php/install/
+[Sun Aug 19 21:40:00 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 12518 to 3202 : URL /index.php/install/wizard/config/, referer: http://forpix.loc/index.php/install/wizard/locale/
+[Sun Aug 19 21:41:52 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php/install/wizard/configPost/, referer: http://forpix.loc/index.php/install/wizard/config/?config%5Blocale%5D=en_US&config%5Btimezone%5D=Europe%2FKiev&config%5Bcurrency%5D=USD
+[Sun Aug 19 21:41:52 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 12628 to 3244 : URL /index.php/install/wizard/config/, referer: http://forpix.loc/index.php/install/wizard/config/?config%5Blocale%5D=en_US&config%5Btimezone%5D=Europe%2FKiev&config%5Bcurrency%5D=USD
+[Sun Aug 19 21:44:13 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 7 to 9 : URL /index.php/install/wizard/checkHost/
+[Sun Aug 19 21:44:13 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php/install/wizard/configPost/, referer: http://forpix.loc/index.php/install/wizard/config/
+[Sun Aug 19 21:47:59 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php/install/wizard/installDb/, referer: http://forpix.loc/index.php/install/wizard/config/
+[Sun Aug 19 21:47:59 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 7649 to 2083 : URL /index.php/install/wizard/administrator/, referer: http://forpix.loc/index.php/install/wizard/config/
+[Sun Aug 19 21:49:19 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php/install/wizard/administratorPost/, referer: http://forpix.loc/index.php/install/wizard/administrator/
+[Sun Aug 19 21:49:20 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 5207 to 1653 : URL /index.php/install/wizard/end/, referer: http://forpix.loc/index.php/install/wizard/administrator/
+[Sun Aug 19 21:50:41 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 3317 to 965 : URL /index.php/admin/, referer: http://forpix.loc/index.php/install/wizard/end/
+[Sun Aug 19 21:50:41 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 2879 to 1087 : URL /skin/adminhtml/default/default/reset.css, referer: http://forpix.loc/index.php/admin/
+[Sun Aug 19 21:50:41 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 89480 to 18931 : URL /skin/adminhtml/default/default/boxes.css, referer: http://forpix.loc/index.php/admin/
+[Sun Aug 19 21:50:41 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 18867 to 4430 : URL /js/mage/adminhtml/form.js, referer: http://forpix.loc/index.php/admin/
+[Sun Aug 19 21:50:41 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 3093 to 1104 : URL /js/mage/captcha.js, referer: http://forpix.loc/index.php/admin/
+[Sun Aug 19 21:50:51 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php/admin/, referer: http://forpix.loc/index.php/admin/
+[Sun Aug 19 21:50:56 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php/admin/index/index/key/7e56a0b1b26bb30d403b8727942c5862/, referer: http://forpix.loc/index.php/admin/
+[Sun Aug 19 21:50:57 2012] [error] [client 127.0.0.1] client denied by server configuration: /home/pasha/WebDevelop/Mage_Forpix/app/etc/local.xml
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 60625 to 13497 : URL /index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/, referer: http://forpix.loc/index.php/admin/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 5986 to 1348 : URL /js/calendar/calendar-win2k-1.css, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 921 to 477 : URL /skin/adminhtml/default/default/custom.css, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 2904 to 1138 : URL /skin/adminhtml/default/default/xmlconnect/boxes.css, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 4053 to 1415 : URL /skin/adminhtml/default/default/menu.css, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 65752 to 14888 : URL /js/prototype/window.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 4744 to 1824 : URL /js/scriptaculous/builder.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 31066 to 7546 : URL /js/scriptaculous/dragdrop.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 10331 to 2689 : URL /js/scriptaculous/slider.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 747 to 419 : URL /js/lib/ccard.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 34797 to 9031 : URL /js/scriptaculous/controls.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 5380 to 1839 : URL /js/mage/adminhtml/hash.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 5541 to 1678 : URL /js/mage/adminhtml/events.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 9421 to 2832 : URL /js/mage/adminhtml/loader.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 33969 to 7207 : URL /js/mage/adminhtml/grid.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 4745 to 1450 : URL /js/mage/adminhtml/accordion.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 10028 to 2188 : URL /js/mage/adminhtml/tabs.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 24404 to 6338 : URL /js/mage/adminhtml/tools.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 8024 to 2437 : URL /js/mage/adminhtml/uploader.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 41712 to 7927 : URL /js/mage/adminhtml/product.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 62591 to 14897 : URL /js/calendar/calendar.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 4986 to 1702 : URL /js/calendar/calendar-setup.js, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:50:57 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 1450 to 699 : URL /skin/adminhtml/default/default/print.css, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:51:10 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 10698 to 2784 : URL /index.php
+[Sun Aug 19 21:51:10 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 4897 to 1218 : URL /skin/frontend/base/default/css/widgets.css, referer: http://forpix.loc/
+[Sun Aug 19 21:51:10 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 95720 to 17921 : URL /skin/frontend/default/default/css/styles.css, referer: http://forpix.loc/
+[Sun Aug 19 21:51:10 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 4426 to 1432 : URL /js/varien/menu.js, referer: http://forpix.loc/
+[Sun Aug 19 21:51:10 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 2615 to 1037 : URL /js/mage/cookies.js, referer: http://forpix.loc/
+[Sun Aug 19 21:51:11 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 1569 to 718 : URL /skin/frontend/default/default/css/print.css, referer: http://forpix.loc/
+[Sun Aug 19 21:51:13 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php, referer: http://forpix.loc/
+[Sun Aug 19 21:51:13 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 11750 to 3018 : URL /index.php, referer: http://forpix.loc/
+[Sun Aug 19 21:51:17 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php, referer: http://forpix.loc/customer/account/login/
+[Sun Aug 19 21:51:17 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 11750 to 3018 : URL /index.php, referer: http://forpix.loc/customer/account/login/
+[Sun Aug 19 21:51:20 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 10698 to 2784 : URL /index.php
+[Sun Aug 19 21:51:27 2012] [error] [client 127.0.0.1] client denied by server configuration: /home/pasha/WebDevelop/Mage_Forpix/app/etc/local.xml
+[Sun Aug 19 21:51:27 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 67137 to 12995 : URL /index.php/admin/process/list/key/43b46939597440eb6e131ece59da0759/, referer: http://forpix.loc/index.php/admin/dashboard/index/key/8b140b49a3e969a9e0cb325129fae44d/
+[Sun Aug 19 21:51:33 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php/admin/process/massReindex/key/48659067f5601749fb9a0088716c29cf/, referer: http://forpix.loc/index.php/admin/process/list/key/43b46939597440eb6e131ece59da0759/
+[Sun Aug 19 21:51:34 2012] [error] [client 127.0.0.1] client denied by server configuration: /home/pasha/WebDevelop/Mage_Forpix/app/etc/local.xml
+[Sun Aug 19 21:51:34 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 66799 to 12941 : URL /index.php/admin/process/list/key/43b46939597440eb6e131ece59da0759/, referer: http://forpix.loc/index.php/admin/process/list/key/43b46939597440eb6e131ece59da0759/
+[Sun Aug 19 21:51:47 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php, referer: http://forpix.loc/
+[Sun Aug 19 21:51:47 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 0 to 2 : URL /index.php, referer: http://forpix.loc/
+[Sun Aug 19 21:51:48 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 7490 to 2019 : URL /index.php, referer: http://forpix.loc/
+[Sun Aug 19 21:51:48 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 1318 to 613 : URL /js/varien/weee.js, referer: http://forpix.loc/checkout/cart/
+[Sun Aug 19 21:51:51 2012] [debug] mod_deflate.c(615): [client 127.0.0.1] Zlib: Compressed 10698 to 2784 : URL /index.php, referer: http://forpix.loc/checkout/cart/
