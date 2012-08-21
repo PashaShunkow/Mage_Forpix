@@ -1,4 +1,4 @@
-db >
+db > проверка
 log - forpix
 pass - 1111
 backend >
