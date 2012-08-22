@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Wao_Forpix>
+            <version>0.0.1</version>
+        </Wao_Forpix>
+    </modules>
+    <global>
+        <blocks>
+            <forpix>
+                <class>Wao_Forpix_Block</class>
+            </forpix>
+        </blocks>
+
+        <helpers>
+            <forpix>
+                <class>Wao_Forpix_Helper</class>
+            </forpix>
+        </helpers>
+                      
+        <models>
+            <forpix>
+                <class>Wao_Forpix_Model</class>
+                <resourceModel>forpix_resource</resourceModel>
+            </forpix>
+            <forpix_resource>
+                <class>Wao_Forpix_Model_Resource</class>
+                <entities>
+                    <images>
+                        <table>fp_images_file</table>
+                    </images>
+                </entities>
+            </forpix_resource>
+        </models>
+                
+        <resources>
+            <forpix_setup>
+                <setup>
+                    <module>Wao_Forpix</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </forpix_setup>
+            <forpix_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </forpix_write>
+            <forpix_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </forpix_read>
+        </resources>
+                       
+    </global>
+       
+    <frontend>
+        <routers>
+            <forpix>
+                <use>standard</use>
+                <args>
+                    <module>Wao_Forpix</module>
+                    <frontName>main</frontName>
+                </args>
+            </forpix>
+        </routers>
+        <layout>
+            <updates>
+                <forpix>
+                    <file>wao/forpix.xml</file>
+                </forpix>
+            </updates>
+        </layout>
+    </frontend>
+</config>

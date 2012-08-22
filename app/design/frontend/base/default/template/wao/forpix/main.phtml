@@ -1,0 +1,6 @@
+<?php  foreach ($this->getCollection() as $quote): ?>
+<div class="quote-item">
+    <h4>1<a href="<?php echo $this->getRowUrl($quote) ?>"><?php echo $quote->getFile_names() ?></a></h4>
+    <p><?php echo $quote->getNazvanie() ?></p>
+</div>
+<?php endforeach  ?>
