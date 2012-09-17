@@ -66,3 +66,4 @@
 [Mon Sep 17 13:22:47 2012] [error] [client 127.0.0.1] File does not exist: /home/pasha/webdevelop/mage_forpix/skin/frontend/base/default/js/wao/singup/lightbox/lightbox.css, referer: http://forpix.loc/singup/index/account/
 [Mon Sep 17 13:22:47 2012] [error] [client 127.0.0.1] File does not exist: /home/pasha/webdevelop/mage_forpix/skin/frontend/base/default/js/wao/singup/lightbox/lightbox.js, referer: http://forpix.loc/singup/index/account/
 [Mon Sep 17 13:43:25 2012] [error] [client 127.0.0.1] File does not exist: /home/pasha/webdevelop/mage_forpix/skin/frontend/base/default/js/wao/singup/lightbox/images/prev.png, referer: http://forpix.loc/singup/index/account/
+[Mon Sep 17 15:06:19 2012] [error] [client 127.0.0.1] client denied by server configuration: /home/pasha/webdevelop/mage_forpix/app/etc/local.xml
