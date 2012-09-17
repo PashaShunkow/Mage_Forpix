@@ -1,0 +1,10 @@
+<div class="reg_form">
+    <form action="<?php $this->helper('singup/data')->getPostUrl('singup/index/registration') ?>" method="post">
+    <label>Имя(Ник):</label><input type="text" name="login" value="<?php $this->getFormData('login') ?>"/><label><?php $this->getFormErros('login') ?></label><br /><br />
+    <label>Почта:</label><input type="text" name="e_mail" value="<?php $this->getFormData('e_mail') ?>"/><label><?php $this->getFormErros('e_mail') ?></label><br /><br />
+    <label>Введите пароль:</label><input type="text" name="pass" value="<?php $this->getFormData('pass') ?>"><label><?php $this->getFormErros('pass') ?></label><br /><br />
+    <label>Повторите пароль:</label><input type="text" name="re_pass" value="<?php $this->getFormData('re_pass') ?>"/><label><?php $this->getFormErros('re_pass') ?></label><br /><br />
+    <input type="submit" name="submit" value="Отправить"/>
+    </form>
+    <p><?php $this->getDebug() ?></p>
+</div>

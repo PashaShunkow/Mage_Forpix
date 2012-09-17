@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout version="0.1.0">
+    <!--
+    Default layout, loads most of the pages
+    -->
+    
+    <!--    <block type="singup/Registr" name="singReg" as="singReg" translate="label">
+        <label>Main Content Area</label>
+    </block>-->
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/wao/singup/jQuery-1.8.1.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/wao/singup/noconlict.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/wao/singup/lightbox/js/lightbox.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>js/wao/singup/lightbox/css/lightbox.css</name>
+            </action>
+        </reference>
+    </default>
+    
+    <singup_index_index>
+        <reference name="content">
+            <block type="singup/Links" name="singLinks" />
+        </reference>
+    </singup_index_index>
+
+    <singup_index_registration>
+        <reference name="content">
+            <block type="singup/Registr" name="singReg" as="singReg"/>
+        </reference>
+    </singup_index_registration>
+    
+    <singup_index_account>
+        <reference name="content">
+            <block type="singup/Account" name="singAcc" as="singAcc" />
+        </reference>
+    </singup_index_account>
+    
+    <singup_index_edit>
+        <reference name="content">
+            <block type="singup/Edit" name="singEdit" />
+        </reference>
+    </singup_index_edit>
+    
+    <block type="singup/Account" name="singInn" as="singInn" template="wao/singup/singInner.phtml"/>
+        
+</layout> 

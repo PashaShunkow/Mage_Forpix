@@ -1,0 +1,30 @@
+<h1>Ви вошли как <strong><?php $this->getFormData('login', 'session') ?></strong></h1>
+<a href="<?php $this->helper('singup/data')->getPostUrl('singup/index/index/', array('unlog' => '1')) ?>" title="out">Выйти!</a>
+<div>
+    <img src="<?php $this->getImage() ?>" alt="" width="400"/>
+</div>
+<div class="for_img">
+    <?php foreach ($this->getImages() as $image): ?>
+        <a href="<?php $this->helper('singup/data')->getPostUrl('singup/index/edit/', array('img' => $image['id'])) ?>"><img src="<?php echo $this->getPrevImg($image['file_names']) ?>" width="150" height="100" alt=""/></a>
+    <?php endforeach; ?>
+    <form method="post" action="<?php $this->helper('singup/data')->getPostUrl('singup/index/edit/') ?>">
+        <div>
+            <br /><label>Название: </label><input name="file_name" type="text" value="<?= $this->getNamePart($image['file_names'], 0) ?>"/>
+            <br /><label>Теги: </label></label><input name="tegs" type="text" value="<?= $image['tegs'] ?>"/>
+            <input type="hidden" name="id" value="<?= $image['id'] ?>"/>
+            <input type="hidden" name="ext" value="<?= $this->getNamePart($image['file_names'], 1) ?>">
+            <input type="hidden" name="old_name" value="<?= $image['file_names'] ?>">
+        </div>
+        <br /><input type="submit" value="Сохранить" name="submit" />
+    </form>
+</div>
+<div class="control">
+    <br />
+    <form method="post" action="<?php $this->helper('singup/data')->getPostUrl('singup/index/edit/') ?>">
+        <input type="submit" name="sybmit" value="Удалить"/>
+        <input type="hidden" name="del" value="<?= $image['id'] ?>" />
+    </form>
+    <br />
+    <br /><a href="<?= $_SERVER['HTTP_REFERER']; ?>">Назад</a><br />
+</div>
+

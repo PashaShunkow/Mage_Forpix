@@ -1,0 +1,68 @@
+<h1>Ви вошли как <strong><?php $this->getFormData('login', 'session') ?></strong></h1>
+<a href="<?php $this->helper('singup/data')->getPostUrl('singup/index/index/', array('unlog' => '1')) ?>" title="out">Выйти!</a>
+
+<div>
+    <form enctype="multipart/form-data" action="<?php $this->helper('singup/data')->getPostUrl('singup/index/uploader/') ?>" method="post">
+        <label style="display: inline-block; width:100px;">Загрузить файл</label><input type="file" name="image" /><br />
+        <label style="display: inline-block; width:100px;">Название</label><input type="text" name="name"/><br />
+        <label style="display: inline-block; width:100px;">Теги</label><input type="text" name="key_words" /><br />
+        <label style="display: inline-block; width:100px;">Выбере категорию</label> 
+        <select onchange="refresh()" id="kat_selector" name="category">
+            <option value="2">Города</option>
+            <option value="3">Кино</option>
+            <option value="4">Девушки</option>
+            <option value="5">Природа</option>
+            <option value="6">Автомобили</option>
+            <option value="7">Животные</option>
+            <option value="8">Еда</option>
+            <option value="9">Разное</option>
+            <option value="10">Компьютеры</option>
+            <option value="11">Под водой</option>
+            <option value="12">Макро</option>
+            <option value="13">Море</option>
+            <option value="14">Фэнтези</option>
+            <option value="15">Музыка</option>
+            <option value="16">Спорт</option>
+            <option value="17">Дети</option>
+            <option value="18">Бренды</option>
+            <option value="19">Мотоциклы</option>
+            <option value="20">Архитектура</option>
+            <option value="21">Игры</option>
+            <option value="22">Абстрактные</option>
+            <option value="23">Знаменитости</option>
+            <option value="24">Части тела</option>
+            <option value="25">Стиль</option>
+            <option value="26">Насекомые</option>
+            <option value="27">Космос</option>
+            <option value="28">Оружие</option>
+            <option value="29">Текстуры</option>
+            <option value="30">Цветы</option>
+            <option value="31">Любовь</option>
+            <option value="32">Армия</option>
+            <option value="33">Аниме</option>
+            <option value="34">Авиация</option>
+            <option value="35">Праздники</option>
+            <option value="36">Мужчины</option>
+        </select><br />
+        <label>Тип изображения</label><br/>
+        <input type="radio" name="img_type" value="img"/><label>Картинка</label>
+        <input type="radio" name="img_type" value="foto"/><label>Фото</label>
+        <input type="radio" name="img_type" value="anime"/><label>Аниме</label>
+        <input type="radio" name="img_type" value="age"/><label>18+</label><br />
+        <input type="submit" name="submit" value="Загрузить" />
+    </form>
+</div>
+<div class="for_img">
+    <?php foreach ($this->getImages() as $image): ?>
+        <div style="float:left; width:160px; text-align: center;">
+            <a rel="lightbox[plants]" href="<?php echo $this->getPrevImg($image['file_names'],'big') ?>">
+                <img style="padding: 2px; border: 1px solid black; margin: 8px; float: none;" src="<?php echo $this->getPrevImg($image['file_names']) ?>" width="150" height="100" alt=""/>
+            </a><br/>
+            <a href="<?php $this->helper('singup/data')->getPostUrl('singup/index/edit/', array('img' => $image['id'])) ?>">Редактировать</a>
+        </div>
+    <?php endforeach; ?>
+</div>
+<div>
+    <? echo $this->getChildHtml() ?>
+</div>
+

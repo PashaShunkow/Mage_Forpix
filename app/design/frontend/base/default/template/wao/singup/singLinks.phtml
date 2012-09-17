@@ -1,0 +1,16 @@
+<div class="sing_links">
+    <form id="reg_form" name="reg_form" action="<?php $this->helper('singup/data')->getPostUrl('singup') ?>" method="post">
+       <label>Логин</label><input type="text" name="login" class="required-entry input-text" value="<?php $this->getFormData('login') ?>"/><label><?php $this->getFormErros('login') ?></label><br /><br />
+       <label>Пароль</label><input type="password" name="pass" class="required-entry input-text" value="<?php $this->getFormData('pass') ?>"/><label><?php $this->getFormErros('pass') ?></label><br /><br />
+       <input type="submit" value="OK" />
+    </form>
+    <br />
+    <br />
+    <a href="<?php $this->helper('singup/data')->getPostUrl('singup/index/registration') ?>" title="registration">Регистрация</a>
+    <p><?php $this->getDebug() ?></p>
+    <p><?php echo $this->message ?></p>
+</div>
+
+<script type="text/javascript">// <![CDATA[
+var myForm= new VarienForm('reg_form', true);
+//]]></script>

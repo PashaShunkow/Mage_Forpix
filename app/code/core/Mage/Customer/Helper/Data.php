@@ -254,7 +254,7 @@ class Mage_Customer_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function getRegisterUrl()
     {
-        return $this->_getUrl('customer/account/create');
+       return $this->_getUrl('customer/account/create');
     }
 
     /**
