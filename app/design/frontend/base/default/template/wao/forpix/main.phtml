@@ -1,6 +1,45 @@
+<<<<<<< HEAD
+<?
+/*
+$filename = "imgTest/1.jpg";
+$img_names_file_resize = "imgTest/cache/1.jpg";
+$nwidth = "200";
+$nheight = "200";
+$quality = "100";
+
+
+
+$captchaIsValid = Mage::helper('forpix')->imgresize($filename, $img_names_file_resize, $nwidth, $nheight);
+if ($captchaIsValid) {
+    echo '<img src="' . Mage::getBaseUrl() . $img_names_file_resize . '" alt="" />';
+} else {
+    echo 'Хреново';
+}
+*/
+?>
+
+
+<?php
+$row = $this->getSortImg();
+
+foreach ($row['result'] as $quote):
+
+    $img_names_file_resize =  $quote['nazvanie'] . "<br />";
+    ?>
+    <? echo $img_names_file_resize; ?>
+<?php endforeach ?>
+
+
+
+<pre>
+    <?php // print_r($this->getSortImg());   ?>
+</pre>
+
+=======
 <?php  foreach ($this->getCollection() as $quote): ?>
 <div class="quote-item">
     <h4>1<a href="<?php echo $this->getRowUrl($quote) ?>"><?php echo $quote->getFile_names() ?></a></h4>
     <p><?php echo $quote->getNazvanie() ?></p>
 </div>
 <?php endforeach  ?>
+>>>>>>> 6c821a96df815cbcba6188dcfd3dd6a4da0ba674

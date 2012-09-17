@@ -19,12 +19,12 @@ class Wao_Forpix_IndexController extends Mage_Core_Controller_Front_Action {
 
     public function imageAction() {
         $quote_id = (int) $this->getRequest()->getParam('id');
-        
+
         if (!$quote_id) {
             $this->_forward('noRoute');
             return;
         }
-        
+
         $this->loadLayout();
         $this->getLayout()
                 ->getBlock('images.item')

@@ -9,7 +9,11 @@ class Wao_Singup_Model_Uploader extends Mage_Core_Model_Abstract {
         $this->_init('forpix/images');
     }
 
+<<<<<<< HEAD
+    public function saveImage() { 
+=======
     public function saveImage() {
+>>>>>>> 6c821a96df815cbcba6188dcfd3dd6a4da0ba674
         if ($this->getData('image/delete')) {
             $this->unsImage();
         }
@@ -35,7 +39,11 @@ class Wao_Singup_Model_Uploader extends Mage_Core_Model_Abstract {
         if ($image instanceof Varien_File_Uploader) {
             $session = Mage::getSingleton('core/session')->getFPUser();
             if ($this->getData('name') != '') {
+<<<<<<< HEAD
+               $fileName = $image->getCorrectFileName($this->transName($this->getData('name')));
+=======
                 $fileName = $image->getCorrectFileName($this->transName($this->getData('name')));
+>>>>>>> 6c821a96df815cbcba6188dcfd3dd6a4da0ba674
                 $image->save($this->getImagePath(), $fileName . "." . $image->getFileExtension());
                 $fullFileName = $fileName . "." . $image->getFileExtension();
             } else {

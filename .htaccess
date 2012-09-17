@@ -35,6 +35,13 @@
     php_value memory_limit 256M
     php_value max_execution_time 18000
 
+<<<<<<< HEAD
+php_flag display_errors on
+php_value error_reporting 7
+
+
+=======
+>>>>>>> 6c821a96df815cbcba6188dcfd3dd6a4da0ba674
 ############################################
 ## disable magic quotes for php request vars
 
