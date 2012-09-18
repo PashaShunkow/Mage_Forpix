@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?
 /*
 $filename = "imgTest/1.jpg";
@@ -24,7 +23,7 @@ $row = $this->getSortImg();
 
 foreach ($row['result'] as $quote):
 
-    $img_names_file_resize =  $quote['nazvanie'] . "<br />";
+    $img_names_file_resize =  $quote['name'] . "<br />";
     ?>
     <? echo $img_names_file_resize; ?>
 <?php endforeach ?>
@@ -35,11 +34,3 @@ foreach ($row['result'] as $quote):
     <?php // print_r($this->getSortImg());   ?>
 </pre>
 
-=======
-<?php  foreach ($this->getCollection() as $quote): ?>
-<div class="quote-item">
-    <h4>1<a href="<?php echo $this->getRowUrl($quote) ?>"><?php echo $quote->getFile_names() ?></a></h4>
-    <p><?php echo $quote->getNazvanie() ?></p>
-</div>
-<?php endforeach  ?>
->>>>>>> 6c821a96df815cbcba6188dcfd3dd6a4da0ba674
