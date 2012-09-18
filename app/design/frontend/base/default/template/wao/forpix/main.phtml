@@ -1,20 +1,20 @@
 <?
 /*
-$filename = "imgTest/1.jpg";
-$img_names_file_resize = "imgTest/cache/1.jpg";
-$nwidth = "200";
-$nheight = "200";
-$quality = "100";
+  $filename = "imgTest/1.jpg";
+  $img_names_file_resize = "imgTest/cache/1.jpg";
+  $nwidth = "200";
+  $nheight = "200";
+  $quality = "100";
 
 
 
-$captchaIsValid = Mage::helper('forpix')->imgresize($filename, $img_names_file_resize, $nwidth, $nheight);
-if ($captchaIsValid) {
-    echo '<img src="' . Mage::getBaseUrl() . $img_names_file_resize . '" alt="" />';
-} else {
-    echo 'Хреново';
-}
-*/
+  $captchaIsValid = Mage::helper('forpix')->imgresize($filename, $img_names_file_resize, $nwidth, $nheight);
+  if ($captchaIsValid) {
+  echo '<img src="' . Mage::getBaseUrl() . $img_names_file_resize . '" alt="" />';
+  } else {
+  echo 'Хреново';
+  }
+ */
 ?>
 
 
@@ -23,14 +23,47 @@ $row = $this->getSortImg();
 
 foreach ($row['result'] as $quote):
 
-    $img_names_file_resize =  $quote['name'] . "<br />";
+    $sortN = $this->getRequest()->getParam('sort');
+
+
+
+
+    switch ($sortN) {
+        case 1:
+            $sort = $quote['top'];
+            break;
+        case 2:
+            $sort = $quote['download'];
+            break;
+        case 3:
+            $sort = $quote['up'];
+            break;
+        default:
+            $sort = $quote['top'];
+            break;
+    }
+
+
+    $img_names_file_resize = "/media/forpix/thumbs_middle/thumb_" . $quote['file_names'];
     ?>
-    <? echo $img_names_file_resize; ?>
+
+
+    <div class="thumb" >
+        <a href="/main/index/image/id/<?php echo $quote['id']; ?>" title="<?php echo $quote['name']; ?>" style=" display: block; height: 204px; "><img src="<? echo $img_names_file_resize; ?>" alt="<?php echo $quote['name']; ?>" width="285" height="179" style=" margin: 21px 0 0 0; " /></a> 
+        <div class="thumbinfo" style="display: block; margin-left: 10px;">
+            <ul>
+                <li><?php echo $quote['width']; ?> x <? echo $quote['hight']; ?></li>
+                <li><a title="<?php echo $quote['name_dir']; ?>" href="/main/index/index/kat/<?php echo $quote['dir_id']; ?>" ><?php echo $quote['name_dir']; ?></a></li>
+                <li class="last"><?php echo $sort; ?></li>
+            </ul>
+        </div>
+    </div>
+
 <?php endforeach ?>
 
 
 
 <pre>
-    <?php // print_r($this->getSortImg());   ?>
+    <?php //print_r($this->getSortImg()); ?>
 </pre>
 

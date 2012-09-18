@@ -23,9 +23,9 @@ class Wao_Forpix_Block_ImagesAll extends Mage_Core_Block_Template {
                 ));
     }
 
-//    public function getCollection() {
-//        return Mage::getModel('forpix/images')->getCollection();
-//    }
+    public function getCollection() {
+        return Mage::getModel('forpix/images')->getCollection();
+    }
 
     /**
      * 
@@ -64,7 +64,7 @@ class Wao_Forpix_Block_ImagesAll extends Mage_Core_Block_Template {
 
         $katN = $this->getRequest()->getParam('kat');
         if (isset($katN) && !empty($katN) && is_numeric($katN) && $katN > 1) {
-            $kategoriya_sort = "AND `kategoriya` = " . $katN . "";
+            $kategoriya_sort = "AND `category` = " . $katN . "";
         } else {
             $kategoriya_sort = "";
         }
@@ -103,7 +103,7 @@ class Wao_Forpix_Block_ImagesAll extends Mage_Core_Block_Template {
 
         $color = $this->getRequest()->getParam('c');
         if (isset($color) && strlen($color) == 6) {
-            $query = "SELECT SQL_CALC_FOUND_ROWS s.id, s.width, s.hight, s.description, s.data_add, s.file_names, s.names, c.name_dir, s.description_mini, s.download, s.top, s.colors,    
+            $query = "SELECT SQL_CALC_FOUND_ROWS s.id, s.width, s.hight, s.description, s.data_add, s.file_names, s.names, c.name_dir, c.dir_id, s.download, s.top, s.colors,    
                         SUBSTRING(
                          s.colors,
                           LOCATE('" . $color . ":', s.colors) + 7,
@@ -115,7 +115,7 @@ class Wao_Forpix_Block_ImagesAll extends Mage_Core_Block_Template {
                     ORDER BY ROUND(proc, 2) DESC
                     LIMIT " . $page . ", " . $itemsperpage . "";
         } else {
-            $query = "SELECT SQL_CALC_FOUND_ROWS  s.id, s.width, s.hight, s.description, s.data_add, s.file_names, s.name, c.name_dir, s.description_mini, s.download, s.up, s.top   
+            $query = "SELECT SQL_CALC_FOUND_ROWS  s.id, s.width, s.hight, s.description, s.data_add, s.file_names, s.name, c.name_dir, c.dir_id, s.download, s.up, s.top   
     FROM fp_images_file s 
     INNER JOIN fp_gallery_dir c ON s.category = c.dir_id 
     WHERE `moderation` = 0 " . $search . " " . $kategoriya_sort . "  " . $imgorfoto_sort . " " . $sizewh_sort . "

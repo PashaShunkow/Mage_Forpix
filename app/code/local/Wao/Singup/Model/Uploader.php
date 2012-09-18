@@ -9,11 +9,10 @@ class Wao_Singup_Model_Uploader extends Mage_Core_Model_Abstract {
         $this->_init('forpix/images');
     }
 
-<<<<<<< HEAD
-    public function saveImage() { 
-=======
     public function saveImage() {
->>>>>>> 6c821a96df815cbcba6188dcfd3dd6a4da0ba674
+
+
+
         if ($this->getData('image/delete')) {
             $this->unsImage();
         }
@@ -39,11 +38,11 @@ class Wao_Singup_Model_Uploader extends Mage_Core_Model_Abstract {
         if ($image instanceof Varien_File_Uploader) {
             $session = Mage::getSingleton('core/session')->getFPUser();
             if ($this->getData('name') != '') {
-<<<<<<< HEAD
-               $fileName = $image->getCorrectFileName($this->transName($this->getData('name')));
-=======
+
                 $fileName = $image->getCorrectFileName($this->transName($this->getData('name')));
->>>>>>> 6c821a96df815cbcba6188dcfd3dd6a4da0ba674
+
+                $fileName = $image->getCorrectFileName($this->transName($this->getData('name')));
+
                 $image->save($this->getImagePath(), $fileName . "." . $image->getFileExtension());
                 $fullFileName = $fileName . "." . $image->getFileExtension();
             } else {
@@ -60,9 +59,9 @@ class Wao_Singup_Model_Uploader extends Mage_Core_Model_Abstract {
                         'data_add' => date('Y-m-d'),
                         'imgorfoto' => $this->getData('img_type')))
                     ->save();
-           $session = Mage::getSingleton('core/session')->getFPUser();
-           $session['last_img'] = $fullFileName;
-           Mage::getSingleton('core/session')->setFPUser($session);
+            $session = Mage::getSingleton('core/session')->getFPUser();
+            $session['last_img'] = $fullFileName;
+            Mage::getSingleton('core/session')->setFPUser($session);
         }
         $this->setData('image', $image);
         return $this;
@@ -122,11 +121,11 @@ class Wao_Singup_Model_Uploader extends Mage_Core_Model_Abstract {
             'Ь' => "'", 'Ы' => 'Y', 'Ъ' => "'",
             'Э' => 'E', 'Ю' => 'Yu', 'Я' => 'Ya',
             'і' => 'i', 'ї' => 'i', 'є' => 'e',
-            'І' => 'І', 'Ї' => 'І', 'Є' => 'E',' '=>'_'
+            'І' => 'І', 'Ї' => 'І', 'Є' => 'E', ' ' => '_'
         );
         $st = strtr($st, $converter);
         //$st = mysql_real_escape_string($st);
-       // die($st);
+        // die($st);
         return $st;
     }
 

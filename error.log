@@ -165,3 +165,12 @@
 =======
 [Mon Sep 17 15:06:19 2012] [error] [client 127.0.0.1] client denied by server configuration: /home/pasha/webdevelop/mage_forpix/app/etc/local.xml
 >>>>>>> 6c821a96df815cbcba6188dcfd3dd6a4da0ba674
+[Tue Sep 18 16:43:21 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_SL, expecting T_FUNCTION in /var/www/forpix.loc/app/code/local/Wao/Singup/Model/Uploader.php on line 12, referer: http://forpix.loc/singup/index/account/
+[Tue Sep 18 16:46:05 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getId() on a non-object in /var/www/forpix.loc/app/code/local/Wao/Forpix/Block/ImagesAll.php on line 22
+[Tue Sep 18 16:46:21 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getId() on a non-object in /var/www/forpix.loc/app/code/local/Wao/Forpix/Block/ImagesAll.php on line 22
+[Tue Sep 18 16:46:55 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getId() on a non-object in /var/www/forpix.loc/app/code/local/Wao/Forpix/Block/ImagesAll.php on line 22
+[Tue Sep 18 16:47:14 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getId() on a non-object in /var/www/forpix.loc/app/code/local/Wao/Forpix/Block/ImagesAll.php on line 22
+[Tue Sep 18 16:47:36 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getId() on a non-object in /var/www/forpix.loc/app/code/local/Wao/Forpix/Block/ImagesAll.php on line 22
+[Tue Sep 18 16:49:16 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getId() on a non-object in /var/www/forpix.loc/app/code/local/Wao/Forpix/Block/ImagesAll.php on line 22
+[Tue Sep 18 16:50:48 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getId() on a non-object in /var/www/forpix.loc/app/code/local/Wao/Forpix/Block/ImagesAll.php on line 22
+[Tue Sep 18 16:52:27 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getId() on a non-object in /var/www/forpix.loc/app/code/local/Wao/Forpix/Block/ImagesAll.php on line 22
