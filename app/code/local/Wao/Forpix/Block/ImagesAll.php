@@ -95,27 +95,29 @@ class Wao_Forpix_Block_ImagesAll extends Mage_Core_Block_Template {
         $imgorfoto_sort = $this->imgorfoto($this->getRequest()->getParam('imgorfoto'));
 
 
+        $id = $this->getRequest()->getParam('id');
+        if (isset($id) && !empty($id) && is_numeric($id) && $id > 1) {
+            $search = 'AND s.id =' . $id;
+        }
 
 
         $color = $this->getRequest()->getParam('c');
         if (isset($color) && strlen($color) == 6) {
-            $query = "SELECT SQL_CALC_FOUND_ROWS s.id, s.width, s.hight, s.opisanie, s.data_add, s.file_names, s.nazvanie, c.name_dir, s.opisanie_mini, s.download, s.top, s.colors,    
+            $query = "SELECT SQL_CALC_FOUND_ROWS s.id, s.width, s.hight, s.description, s.data_add, s.file_names, s.names, c.name_dir, s.description_mini, s.download, s.top, s.colors,    
                         SUBSTRING(
                          s.colors,
                           LOCATE('" . $color . ":', s.colors) + 7,
                              4
                             ) AS proc
-
                      FROM fp_images_file s 
-                         INNER JOIN fp_gallery_dir c ON s.kategoriya = c.dir_id 
+                         INNER JOIN fp_gallery_dir c ON s.category = c.dir_id 
                      WHERE `moderation` = 0 AND s.colors LIKE '%" . $color . "%' " . $kategoriya_sort . "  " . $imgorfoto_sort . " " . $sizewh_sort . " 
                     ORDER BY ROUND(proc, 2) DESC
                     LIMIT " . $page . ", " . $itemsperpage . "";
         } else {
-
-            $query = "SELECT SQL_CALC_FOUND_ROWS  s.id, s.width, s.hight, s.opisanie, s.data_add, s.file_names, s.nazvanie, c.name_dir, s.opisanie_mini, s.download, s.up, s.top   
+            $query = "SELECT SQL_CALC_FOUND_ROWS  s.id, s.width, s.hight, s.description, s.data_add, s.file_names, s.name, c.name_dir, s.description_mini, s.download, s.up, s.top   
     FROM fp_images_file s 
-    INNER JOIN fp_gallery_dir c ON s.kategoriya = c.dir_id 
+    INNER JOIN fp_gallery_dir c ON s.category = c.dir_id 
     WHERE `moderation` = 0 " . $search . " " . $kategoriya_sort . "  " . $imgorfoto_sort . " " . $sizewh_sort . "
     ORDER BY `s`.`" . $sort . "` DESC 
     LIMIT " . $page . ", " . $itemsperpage . "";

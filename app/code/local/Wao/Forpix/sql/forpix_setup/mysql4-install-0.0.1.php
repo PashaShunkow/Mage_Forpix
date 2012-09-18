@@ -19,12 +19,11 @@ $installer->run(
   `file_names` text NOT NULL,
   `width` int(10) NOT NULL,
   `hight` int(10) NOT NULL,
-  `opisanie_mini` text,
-  `opisanie` text,
+  `description` text,
   `tegs` text,
-  `kategoriya` text NOT NULL,
+  `category` text NOT NULL,
   `imgorfoto` text NOT NULL,
-  `nazvanie` text NOT NULL,
+  `name` text NOT NULL,
   `data_add` date NOT NULL,
   `user_login` varchar(50) DEFAULT NULL,
   `download` int(11) DEFAULT '0',
@@ -34,6 +33,8 @@ $installer->run(
   `colors` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8");
+
+
 
 
 
